@@ -1,10 +1,38 @@
+import { useState } from "react";
+import "./collapse.scss";
+import { FaChevronUp } from "react-icons/fa";
+
+
 function Collapse({ title, content }) {
-        return (
-            <div className="collapse">
-                <h3 className="collapse-title">{title}</h3>
-                <div className="collapse-content">{content}</div>
-            </div>
-        )
+  const [isOpen, setIsOpen] = useState(false);
+
+  return (
+    <div className="collapse">
+      <button
+        className="collapse__header"
+        onClick={() => setIsOpen(!isOpen)}
+      >
+        <span>{title}</span>
+        <span className={`collapse__arrow ${isOpen ? "open" : ""}`}>
+          <FaChevronUp />
+        </span>
+      </button>
+
+      {isOpen && (
+        <div className="collapse__content">
+          {Array.isArray(content) ? (
+            <ul>
+              {content.map((item, index) => (
+                <li key={index}>{item}</li>
+              ))}
+            </ul>
+          ) : (
+            <p>{content}</p>
+          )}
+        </div>
+      )}
+    </div>
+  );
 }
 
-export default Collapse
+export default Collapse;

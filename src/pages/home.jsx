@@ -1,8 +1,10 @@
 import "../styles/index.scss"
 import ImgHome from '../assets/img_home.png'
 import { HouseList } from '../datas/houses.js'
+import { useNavigate } from 'react-router-dom'
 
 function Home() {
+    const navigate = useNavigate()
     return (
         <div>
             <div className="home">
@@ -11,7 +13,7 @@ function Home() {
             </div>
             <ul className="house-list">
                 {HouseList.map(({id, title, cover}) => (
-                    <li key={id} className="house-card">
+                    <li key={id} className="house-card" onClick={() => navigate(`/house/${id}`)}>
                         <img src={cover} alt={title} />
                         <div className="house-title">{title}</div>
                     </li>
