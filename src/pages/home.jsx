@@ -1,6 +1,6 @@
 import "../styles/index.scss"
 import ImgHome from '../assets/img_home.png'
-import { HouseList } from '../data.js'
+import { HouseList } from '../datas/houses.js'
 
 function Home() {
     return (

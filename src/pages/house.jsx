@@ -1,6 +1,9 @@
-
 function House() {
-    return <h1>Logement</h1>
+    return (
+        <div>
+            <h1>Page du logement</h1>
+        </div>
+    )
 }
 
 export default House

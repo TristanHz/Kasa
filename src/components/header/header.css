@@ -1,0 +1,25 @@
+
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px 50px;
+}
+
+.banner .nav {
+  margin-left: 20px;
+  text-decoration: none;
+  color: black;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  padding: 20px;
+}
+
+.active {
+  text-decoration: underline;
+}
+
+.banner .nav a .showActive {
+  text-decoration: underline;
+}
