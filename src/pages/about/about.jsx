@@ -7,9 +7,11 @@ function About() {
     return (    
         <div className="about">
                 <img src={ImgAbout} alt="Image de présentation de la page à propos" />
+                <div className="collapse-column">
                 {aboutData.map(({id, title, content}) => (
                     <Collapse key={id} title={title} content={content} />
                 ))}
+                </div>
         </div>
     )
 }

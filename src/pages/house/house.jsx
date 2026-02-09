@@ -1,5 +1,7 @@
 import { useParams } from 'react-router-dom'
 import { HouseList } from '../../datas/houses.js'
+import Collapse from '../../components/collapse/collapse.jsx'
+import "./house.css"
 
 function House() {
     const { id } = useParams()
@@ -7,9 +9,39 @@ function House() {
 
     return <div>
         <div className="house-cover">
-            <img src={house.cover} alt={house.title} />
+            <img src={house.cover} alt={house.title} className='house-slider'/>
+            <div className='info-title-container'>
+                <div className='main-info-house'>
+                    <h1>{house.title}</h1>
+                    <h2>{house.location}</h2>
+                    <div className='tags-container'>
+                        {house.tags.map((tag, index) => (
+                            <span key={index} className='tag'>{tag}</span>
+                        ))}
+                    </div>
+                </div>
+                <div className='main-info-person'>
+                    <div className='person-name'>
+                        <span>{house.host.name.split(' ')[0]}</span>
+                        <span>{house.host.name.split(' ')[1]}</span>
+                    </div>
+                    <img src={house.host.picture} alt={house.host.name} className='person-picture' />
+                </div>
+                <div className='rating'>
+                    {Array.from({ length: 5 }, (_, index) => (
+                        <span key={index} className={`star ${index < house.rating ? 'filled' : ''}`}>★</span>
+                    ))}
+                </div>
+            </div>
+            <div className='collapse-info'>
+                <div className='collapse-description'>
+                    <Collapse title="Description" content={house.description} />
+                </div>
+                <div className='collapse-equipments'>
+                    <Collapse title="Equipements" content={house.equipments} />
+                </div>
+            </div>
         </div>
-        <h1>{house.title}</h1>
     </div>
 }
 

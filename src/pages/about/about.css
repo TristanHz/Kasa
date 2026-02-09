@@ -11,3 +11,11 @@
   object-fit: cover;
   margin-bottom: 30px;
 }
+
+.collapse-column {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
