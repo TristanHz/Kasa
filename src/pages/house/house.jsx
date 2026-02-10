@@ -1,6 +1,7 @@
 import { useParams } from 'react-router-dom'
 import { HouseList } from '../../datas/houses.js'
 import Collapse from '../../components/collapse/collapse.jsx'
+import Slider from '../../components/slider/slider.jsx'
 import "./house.css"
 
 function House() {
@@ -9,7 +10,7 @@ function House() {
 
     return <div>
         <div className="house-cover">
-            <img src={house.cover} alt={house.title} className='house-slider'/>
+            <Slider pictures={house.pictures} title={house.title} />
             <div className='info-title-container'>
                 <div className='main-info-house'>
                     <h1>{house.title}</h1>
@@ -20,17 +21,19 @@ function House() {
                         ))}
                     </div>
                 </div>
-                <div className='main-info-person'>
-                    <div className='person-name'>
-                        <span>{house.host.name.split(' ')[0]}</span>
-                        <span>{house.host.name.split(' ')[1]}</span>
+                <div className='info-host-container'>
+                    <div className='main-info-person'>
+                        <div className='person-name'>
+                            <span>{house.host.name.split(' ')[0]}</span>
+                            <span>{house.host.name.split(' ')[1]}</span>
+                        </div>
+                        <img src={house.host.picture} alt={house.host.name} className='person-picture' />
                     </div>
-                    <img src={house.host.picture} alt={house.host.name} className='person-picture' />
-                </div>
-                <div className='rating'>
-                    {Array.from({ length: 5 }, (_, index) => (
-                        <span key={index} className={`star ${index < house.rating ? 'filled' : ''}`}>★</span>
-                    ))}
+                    <div className='rating'>
+                        {Array.from({ length: 5 }, (_, index) => (
+                            <span key={index} className={`star ${index < house.rating ? 'filled' : ''}`}>★</span>
+                        ))}
+                    </div>
                 </div>
             </div>
             <div className='collapse-info'>
