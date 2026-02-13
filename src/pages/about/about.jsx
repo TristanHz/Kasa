@@ -1,4 +1,4 @@
-import "./about.css"
+import "./about.scss"
 import Collapse from '../../components/collapse/collapse.jsx'
 import { aboutData } from "../../datas/about.js"
 import ImgAbout from '../../assets/about_img.png'

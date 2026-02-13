@@ -1,10 +1,10 @@
 import { NavLink } from 'react-router-dom'
 import LogoKasa from '../../assets/Logo.png'
-import "./header.css"
+import "./header.scss"
 
 function Header() {
     return (
-        <div className="banner">
+        <div className="header">
             <img src={LogoKasa} alt="Logo Kasa" />
             <nav>
                 <NavLink className={({ isActive }) => isActive ? "nav showActive" : "nav"

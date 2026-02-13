@@ -1,0 +1,42 @@
+$color_1: black;
+$font-family_1: 'Montserrat', sans-serif;
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 30px 50px 0px 50px;
+
+	.nav {
+		margin-left: 20px;
+		text-decoration: none;
+		color: $color_1;
+		font-family: $font-family_1;
+		font-weight: 500;
+		font-size: 18px;
+		padding: 20px;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+
+	.nav.showActive {
+		text-decoration: underline;
+		text-underline-offset: 2px;
+	}
+}
+
+@media (max-width: 768px) {
+	.header .nav {
+		text-transform: uppercase;
+		font-size: 12px;
+		margin-left: 0px;
+		white-space: nowrap;
+		padding: 5px;
+	}
+
+	.header img {
+		width: 145px;
+	}
+}

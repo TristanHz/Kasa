@@ -1,0 +1,74 @@
+$color_1: #FF6060;
+$color_2: rgba(0, 0, 0, 1);
+$color_3: rgba(255, 255, 255, 1);
+$font-family_1: 'Montserrat', sans-serif;
+$background-color_1: rgba(255, 96, 96, 1);
+
+
+.house-cover {
+	margin: 0 100px;
+}
+.info-title-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 40px;
+}
+.main-info-house {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	h1 {
+		font-size: 36px;
+		font-weight: 500;
+		font-family: $font-family_1;
+		color: $color_1;
+	}
+	h2 {
+		font-size: 18px;
+		font-weight: 500;
+		font-family: $font-family_1;
+		color: $color_2;
+		padding-bottom: 15px;
+	}
+}
+.tag {
+	font-family: $font-family_1;
+	font-weight: 700;
+	font-size: 14px;
+	color: $color_3;
+	background-color: $background-color_1;
+	border-radius: 10px;
+	padding: 5px 10px;
+	margin-right: 10px;
+}
+.main-info-person {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+.person-name {
+	display: flex;
+	flex-direction: column;
+	font-size: 18px;
+	font-weight: 500;
+	font-family: $font-family_1;
+	color: $color_1;
+}
+.person-picture {
+	border-radius: 50%;
+	width: 64px;
+}
+.collapse-info {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.collapse__header {
+	width: 41vw;
+	border-radius: 10px;
+	padding-right: 10px;
+}
+.collapse__content {
+	width: 41vw;
+}

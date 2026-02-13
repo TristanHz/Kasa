@@ -3,7 +3,7 @@ import { HouseList } from '../../datas/houses.js'
 import Collapse from '../../components/collapse/collapse.jsx'
 import Slider from '../../components/slider/slider.jsx'
 import Rating from '../../components/rating/rating.jsx'
-import "./house.css"
+import "./house.scss"
 
 function House() {
     const { id } = useParams()
