@@ -2,11 +2,12 @@ import "./about.css"
 import Collapse from '../../components/collapse/collapse.jsx'
 import { aboutData } from "../../datas/about.js"
 import ImgAbout from '../../assets/about_img.png'
+import Banner from '../../components/banner/banner.jsx'
 
 function About() {
     return (    
         <div className="about">
-                <img src={ImgAbout} alt="Image de présentation de la page à propos" />
+                <Banner logo={ImgAbout} text="" />
                 <div className="collapse-column">
                 {aboutData.map(({id, title, content}) => (
                     <Collapse key={id} title={title} content={content} />

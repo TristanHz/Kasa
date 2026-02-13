@@ -70,13 +70,13 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    gap: 20px;
 }
 
 .collapse__header {
 
     width: 41vw;
     border-radius: 10px;
+    padding-right: 10px;
 }
 
 .collapse__content {

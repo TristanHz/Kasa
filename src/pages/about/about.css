@@ -6,10 +6,11 @@
 .about img {
   width: 100%;
   max-height: 20vh;
+  min-height: 111px;
   border-radius: 15px;
-  position: relative;
   object-fit: cover;
   margin-bottom: 30px;
+  filter: brightness(100%);
 }
 
 .collapse-column {
@@ -18,4 +19,12 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+}
+
+button.collapse__header {
+    width: 70vw;
+}
+
+button.collapse__content {
+    width: 70vw;
 }

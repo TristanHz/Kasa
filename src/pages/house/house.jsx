@@ -2,6 +2,7 @@ import { useParams } from 'react-router-dom'
 import { HouseList } from '../../datas/houses.js'
 import Collapse from '../../components/collapse/collapse.jsx'
 import Slider from '../../components/slider/slider.jsx'
+import Rating from '../../components/rating/rating.jsx'
 import "./house.css"
 
 function House() {
@@ -29,11 +30,7 @@ function House() {
                         </div>
                         <img src={house.host.picture} alt={house.host.name} className='person-picture' />
                     </div>
-                    <div className='rating'>
-                        {Array.from({ length: 5 }, (_, index) => (
-                            <span key={index} className={`star ${index < house.rating ? 'filled' : ''}`}>★</span>
-                        ))}
-                    </div>
+                    <Rating house={house} />
                 </div>
             </div>
             <div className='collapse-info'>

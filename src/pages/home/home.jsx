@@ -1,16 +1,14 @@
-import "../styles/index.scss"
-import ImgHome from '../assets/img_home.png'
-import { HouseList } from '../datas/houses.js'
+import "./home.scss"
+import ImgHome from '../../assets/img_home.png'
+import { HouseList } from '../../datas/houses.js'
+import Banner from '../../components/banner/banner.jsx'
 import { useNavigate } from 'react-router-dom'
 
 function Home() {
     const navigate = useNavigate()
     return (
         <div>
-            <div className="home">
-                <img src={ImgHome} alt="Image d'accueil" />
-                <p>Chez vous, partout et ailleurs</p>
-            </div>
+            <Banner logo={ImgHome} text="Chez vous, partout et ailleurs" />
             <ul className="house-list">
                 {HouseList.map(({id, title, cover}) => (
                     <li key={id} className="house-card" onClick={() => navigate(`/house/${id}`)}>

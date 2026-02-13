@@ -1,10 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import Home from './pages/home.jsx'
+import Home from './pages/home/home.jsx'
 import About from './pages/about/about.jsx'
-import Header from './components/header/header.jsx'
-import Footer from './components/footer.jsx'
+import Header from './layouts/header/header.jsx'
+import Footer from './layouts/footer/footer.jsx'
 import Error from './pages/error/error.jsx'
 import House from './pages/house/house.jsx'
 
