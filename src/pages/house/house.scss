@@ -63,6 +63,7 @@ $background-color_1: rgba(255, 96, 96, 1);
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+	gap: 15px;
 }
 .collapse__header {
 	width: 41vw;

@@ -1,7 +1,5 @@
 .about {
 
-	margin-bottom: 30px;
-
 	img {
 		border-radius: 15px;
 		object-fit: cover;
@@ -10,10 +8,10 @@
 }
 
 .collapse-column {
-	width: 100%;
 	display: flex;
 	align-items: center;
 	flex-direction: column;
+	margin: 0 30px;
 
 	.collapse__header {
 		width: 80vw;
@@ -25,16 +23,31 @@
 }
 
 @media (max-width: 768px) {
+	.collapse {
+		width: 100%;
+	}
+
+	.collapse-column {
+		margin: 16px 16px 0 16px;
+	}
+
 	.collapse-column .collapse__header {
-		width: 90vw;
+		width: 100%;
 	}
 	.collapse-column .collapse__content {
-		width: 90vw;
+		width: 100%;
 	}
 	.collapse__header span {
 		font-size: 12px;
 	}
 	.collapse__content span {
 		font-size: 12px;
+	}
+	.collapse__content p {
+		font-size: 12px;
+	}
+
+	.about img {
+		max-height: 111px;
 	}
 }

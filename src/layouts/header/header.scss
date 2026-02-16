@@ -28,6 +28,9 @@ $font-family_1: 'Montserrat', sans-serif;
 }
 
 @media (max-width: 768px) {
+	.header {
+		margin: 30px 16px 0 16px;
+	}
 	.header .nav {
 		text-transform: uppercase;
 		font-size: 12px;
