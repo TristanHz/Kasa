@@ -51,3 +51,9 @@
         }
     }
 }
+
+@media (max-width: 768px) {
+    .collapse__header {
+        border-radius: 5px;
+    }
+}
