@@ -19,8 +19,15 @@ $background-color_1: black;
 	color: $color_1;
 }
 
+.break-point {
+	display: none;
+}
+
 @media (max-width: 768px) {
     .footerContent {
         font-size: 12px;
     }
+	.break-point {
+		display: block;
+	}
 }

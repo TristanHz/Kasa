@@ -8,7 +8,12 @@ function Home() {
     const navigate = useNavigate()
     return (
         <div>
-            <Banner logo={ImgHome} text="Chez vous, partout et ailleurs" />
+            <Banner logo={ImgHome}
+                    text={
+                            <> Chez vous,<span className="break-line"> partout et ailleurs</span> 
+                            </>
+                    }
+            />
             <ul className="house-list">
                 {HouseList.map(({id, title, cover}) => (
                     <li key={id} className="house-card" onClick={() => navigate(`/house/${id}`)}>

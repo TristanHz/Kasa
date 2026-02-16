@@ -24,6 +24,7 @@ $generalMargin: 30px 50px;
   font-family: $textFamily;
   font-weight: 700;
   font-size: 48px;
+  margin: 0px 61px;
   text-shadow:
     1px 1px 0 #000,
     -1px 1px 0 #000,
@@ -33,16 +34,14 @@ $generalMargin: 30px 50px;
 
 @media (max-width: 768px) {
     .banner {
-        margin: 30px 20px;
+        margin: 30px 16px 0 16px;
+        justify-content: left;
     }
      .banner p {
         font-size: 24px;
+        margin-left: 10px;
     }
      .banner img {
-        max-height: 111px;
-    }
-    .banner img {
-        width: 100vw;
-        max-height: 15vh;
+        min-height: 111px;
     }
 }

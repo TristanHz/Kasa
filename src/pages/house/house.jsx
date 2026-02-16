@@ -1,4 +1,4 @@
-import { useParams } from 'react-router-dom'
+import { useParams, Navigate } from 'react-router-dom'
 import { HouseList } from '../../datas/houses.js'
 import Collapse from '../../components/collapse/collapse.jsx'
 import Slider from '../../components/slider/slider.jsx'
@@ -8,6 +8,10 @@ import "./house.scss"
 function House() {
     const { id } = useParams()
     const house = HouseList.find(house => house.id === id)
+
+    if (!house) {
+        return <Navigate to="/404" />
+    }
 
     return <div>
         <div className="house-cover">
