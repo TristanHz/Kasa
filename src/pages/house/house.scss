@@ -6,13 +6,14 @@ $background-color_1: rgba(255, 96, 96, 1);
 
 
 .house-cover {
-	margin: 0 100px;
+	margin: 0 50px;
 }
 .info-title-container {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	margin-bottom: 40px;
+	margin-top: 20px;
 }
 .main-info-house {
 	display: flex;
@@ -45,6 +46,7 @@ $background-color_1: rgba(255, 96, 96, 1);
 .main-info-person {
 	display: flex;
 	align-items: center;
+	justify-content: flex-end;
 	gap: 20px;
 }
 .person-name {
@@ -64,6 +66,7 @@ $background-color_1: rgba(255, 96, 96, 1);
 	flex-direction: row;
 	justify-content: space-between;
 	gap: 15px;
+	margin-bottom: 10px;
 }
 .collapse__header {
 	width: 41vw;
@@ -81,7 +84,6 @@ $background-color_1: rgba(255, 96, 96, 1);
 		flex-direction: column;
 		align-items: flex-start;
 		margin-bottom: 16px;
-		gap: 20px;
 	}
 	.main-info-house h1 {
 		font-size: 24px;
@@ -98,11 +100,15 @@ $background-color_1: rgba(255, 96, 96, 1);
 	.main-info-person {
 		gap: 10px;
 	}
+	.person-picture {
+		width: 32px;
+	}
 	.person-name {
 		font-size: 12px;
 	}
 	.info-host-container {
 		width: 100%;
+		margin-top: 15px;
 		display: flex;
 		flex-direction: row-reverse;
 		justify-content: space-between;
@@ -113,6 +119,7 @@ $background-color_1: rgba(255, 96, 96, 1);
 
 	.collapse-info {
 		flex-direction: column;
+		gap: 0px;
 	}
 
 	.collapse__header {

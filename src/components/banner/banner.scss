@@ -33,15 +33,15 @@ $generalMargin: 30px 50px;
 } 
 
 @media (max-width: 768px) {
-    .banner {
-        margin: 30px 16px 0 16px;
-        justify-content: left;
-    }
-     .banner p {
-        font-size: 24px;
-        margin-left: 10px;
-    }
-     .banner img {
-        min-height: 111px;
-    }
+	.banner {
+		margin: 30px 16px 0 16px;
+		justify-content: left;
+		p {
+			font-size: 24px;
+			margin-left: 10px;
+		}
+		img {
+			min-height: 111px;
+		}
+	}
 }

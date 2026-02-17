@@ -34,7 +34,7 @@ function House() {
                         </div>
                         <img src={house.host.picture} alt={house.host.name} className='person-picture' />
                     </div>
-                    <Rating house={house} />
+                    <Rating rating={house.rating} />
                 </div>
             </div>
             <div className='collapse-info'>
