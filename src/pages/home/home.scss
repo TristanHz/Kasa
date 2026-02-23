@@ -2,15 +2,20 @@
   margin: 0;
 }
 
-html, body {
-  min-height: 100%;
+html {
+  height: 100vh;
+  margin: 0;
 }
 
-#root {
+body {
   display: flex;
   flex-direction: column;
-  min-height: 100vh; 
-  justify-content: space-between; //* Assure que le footer reste en bas de la page => A voir si je peux faire mieux *//
+  height: 100vh;
+  padding: 0;
+}
+
+main {
+  flex: 1;
 }
 
 $textFamily: 'Montserrat', sans-serif;

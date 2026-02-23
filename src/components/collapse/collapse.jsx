@@ -22,8 +22,8 @@ function Collapse({ title, content }) {
         <div className="collapse__content">
           {Array.isArray(content) ? (
             <ul>
-              {content.map((item, index) => (
-                <li key={index}>{item}</li>
+              {content.map((item) => (
+                <li key={item.id}>{item}</li>
               ))}
             </ul>
           ) : (

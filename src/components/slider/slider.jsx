@@ -30,11 +30,16 @@ function Slider({ pictures, title }) {
             {pictures.length > 1 && (
                 <>
                     <button className="arrow left" onClick={prevSlide}>
-                        ❮
+                        <svg width="47" height="80" viewBox="0 0 47 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M46.68 7.08L39.56 0L0 39.6L39.6 79.2L46.68 72.12L14.16 39.6L46.68 7.08Z" fill="white" />
+                        </svg>
+
                     </button>
 
                     <button className="arrow right" onClick={nextSlide}>
-                        ❯
+                        <svg width="47" height="80" viewBox="0 0 47 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 72.12L7.08 79.2L46.68 39.6L7.08 0L0 7.08L32.52 39.6L0 72.12Z" fill="white" />
+                        </svg>
                     </button>
 
                     <span className="counter">
