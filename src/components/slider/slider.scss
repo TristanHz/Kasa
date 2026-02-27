@@ -55,10 +55,16 @@ $font-family_1: 'Montserrat', sans-serif;
 	.house-slider {
 		height: 255px;
 	}
-	.arrow {
-		font-size: 45px;
-	}
 	.counter {
 		display: none;
+	}
+	svg {
+		height: 25px;
+	}
+	.left {
+		left: 0px;
+	}
+	.right {
+		right: 0px;
 	}
 }
